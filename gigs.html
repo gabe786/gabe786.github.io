@@ -95,21 +95,20 @@
     }
   });
 
-  // Loading screen
+  // Loading screen + active nav
   window.addEventListener("load", function () {
     setTimeout(function () {
       document.getElementById("loader").classList.add("hide");
     }, 1800);
+
+    // Highlight the current page in the nav
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    document.querySelectorAll("nav a").forEach(function(link) {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
   });
-
-// Highlight the current page in the nav
-const currentPage = window.location.pathname.split("/").pop() || "index.html";
-document.querySelectorAll("nav a").forEach(function(link) {
-  if (link.getAttribute("href") === currentPage) {
-    link.classList.add("active");
-  }
-});
-
 </script>
 
 </body>
