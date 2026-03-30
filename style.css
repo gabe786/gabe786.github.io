@@ -414,3 +414,11 @@ nav a.active {
   color: #888;
   font-style: italic;
 }
+
+/* NO MERCH MESSAGE */
+.no-merch {
+  color: #666;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
