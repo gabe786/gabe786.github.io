@@ -19,12 +19,21 @@
 </div>
 
 <header>
- <img src="logo.png" alt="Redskies" class="logo">
-  <nav>
-  <a href="index.html" class="active">Home</a>
-  <a href="gigs.html">Gigs</a>
-  <a href="merch.html">Merch</a>
-</nav>
+  <img src="logo.png" alt="Redskies" class="logo">
+
+  <!-- BURGER ICON -->
+  <div class="burger" id="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- NAV MENU -->
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="gigs.html">Gigs</a>
+    <a href="merch.html">Merch</a>
+  </nav>
 </header>
 
 <section class="hero">
@@ -117,6 +126,24 @@ window.addEventListener("load", function () {
     document.querySelector(".release-banner").classList.add("visible");
   }, 1800);
 });
+
+// BURGER MENU
+const burger = document.getElementById("burger");
+const nav = document.getElementById("nav");
+
+burger.addEventListener("click", function () {
+  nav.classList.toggle("active");
+  burger.classList.toggle("active");
+});
+
+// Close menu when clicking links
+document.querySelectorAll("#nav a").forEach(link => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("active");
+    burger.classList.remove("active");
+  });
+});
+
 </script>
 
 </body>
