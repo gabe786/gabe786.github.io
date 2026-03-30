@@ -85,7 +85,7 @@ window.addEventListener("load", function () {
 });
 
 // Highlight the current page in the nav
-const currentPage = window.location.pathname.split("/").pop();
+const currentPage = window.location.pathname.split("/").pop() || "index.html";
 document.querySelectorAll("nav a").forEach(function(link) {
   if (link.getAttribute("href") === currentPage) {
     link.classList.add("active");
