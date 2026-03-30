@@ -296,39 +296,7 @@ footer {
   nav a {
     margin: 0 8px;
     font-size: 0.8rem;
- 
-
-/* Mobile styles */
-@media (max-width: 600px) {
-  .burger {
-    display: flex;
   }
-
-  nav {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 70%;
-    height: 100vh;
-    background: #000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: right 0.4s ease;
-  }
-
-  nav.active {
-    right: 0;
-  }
-
-  nav a {
-    margin: 20px 0;
-    font-size: 1.2rem;
-  }
-}
-
-}
 
   header h1 {
     font-size: 1.5rem;
@@ -339,7 +307,9 @@ footer {
   }
 }
 
-/* GRAIN OVERLAY */
+/* ========================
+   GRAIN OVERLAY
+======================== */
 body::after {
   content: '';
   position: fixed;
@@ -355,7 +325,9 @@ body::after {
   background-size: 200px 200px;
 }
 
-/* LOADING SCREEN */
+/* ========================
+   LOADING SCREEN
+======================== */
 #loader {
   position: fixed;
   top: 0;
@@ -383,7 +355,6 @@ body::after {
 }
 
 @keyframes logoFlickerPulse {
-  /* Flicker section */
   0%   { opacity: 0; transform: scale(1); }
   5%   { opacity: 1; transform: scale(1); }
   8%   { opacity: 0; transform: scale(1); }
@@ -394,14 +365,14 @@ body::after {
   20%  { opacity: 1; transform: scale(1); }
   25%  { opacity: 0; transform: scale(1); }
   30%  { opacity: 1; transform: scale(1); }
-  /* Pulse section */
   50%  { opacity: 1; transform: scale(1.08); }
   70%  { opacity: 1; transform: scale(0.97); }
   100% { opacity: 1; transform: scale(1); }
 }
 
-
-/* ACTIVE NAV LINK */
+/* ========================
+   ACTIVE NAV LINK
+======================== */
 nav a.active {
   color: #ff2e63;
   border-bottom: 2px solid #ff2e63;
@@ -435,23 +406,26 @@ nav a.active {
   height: 24px;
 }
 
+/* ========================
+   GIG TICKET LABELS
+======================== */
 .ticket-free {
   color: #ffffff;
   font-weight: bold;
   letter-spacing: 1px;
 }
 
-
 .ticket-soon {
   color: #888;
   font-style: italic;
 }
 
-/* NO MERCH MESSAGE */
+/* ========================
+   NO MERCH MESSAGE
+======================== */
 .no-merch {
   color: #666;
   font-style: italic;
   letter-spacing: 1px;
   margin-top: 20px;
 }
-
