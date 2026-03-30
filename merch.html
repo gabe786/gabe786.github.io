@@ -3,6 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Meta Tags -->
+<meta name="description" content="West Midlands Alternative Grunge">
+
+<!-- Open Graph (Facebook, WhatsApp, Discord etc) -->
+<meta property="og:title" content="Redskies">
+<meta property="og:description" content="West Midlands Alternative Grunge">
+<meta property="og:image" content="https://redskiesmusic.uk/logo.png">
+<meta property="og:url" content="https://redskiesmusic.uk">
+<meta property="og:type" content="website">
+
+<!-- Twitter/X -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Redskies">
+<meta name="twitter:description" content="West Midlands Alternative Grunge">
+<meta name="twitter:image" content="https://redskiesmusic.uk/logo.png">
   <title>Redskies - Merch</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -67,6 +82,14 @@ window.addEventListener("load", function () {
   setTimeout(function () {
     document.getElementById("loader").classList.add("hide");
   }, 1800);
+});
+
+// Highlight the current page in the nav
+const currentPage = window.location.pathname.split("/").pop();
+document.querySelectorAll("nav a").forEach(function(link) {
+  if (link.getAttribute("href") === currentPage) {
+    link.classList.add("active");
+  }
 });
 
 </script>
