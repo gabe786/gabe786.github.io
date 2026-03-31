@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon_transparent.ico">
   <!-- Meta Tags -->
 <meta name="description" content="West Midlands Alternative Grunge">
 
@@ -19,6 +20,17 @@
 <meta name="twitter:description" content="West Midlands Alternative Grunge">
 <meta name="twitter:image" content="https://redskiesmusic.uk/logo.png">
   <title>Redskies - Gigs</title>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L127RKM1N2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L127RKM1N2');
+</script>
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -61,6 +73,17 @@
     <p class="ticket-soon">Tickets Coming Soon</p>
   </div>
 
+</section>
+
+<section class="contact fade-in">
+  <h2>Bookings</h2>
+  <p>Want to book Redskies? Get in touch below.</p>
+  <form action="https://formspree.io/f/xwvwodyk" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
 </section>
 
 <footer>
