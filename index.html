@@ -4,32 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="favicon_transparent.ico">
+
   <!-- Meta Tags -->
-<meta name="description" content="West Midlands Alternative Grunge">
+  <meta name="description" content="West Midlands Alternative Grunge">
 
-<!-- Open Graph (Facebook, WhatsApp, Discord etc) -->
-<meta property="og:title" content="Redskies">
-<meta property="og:description" content="West Midlands Alternative Grunge">
-<meta property="og:image" content="https://redskiesmusic.uk/logo.png">
-<meta property="og:url" content="https://redskiesmusic.uk">
-<meta property="og:type" content="website">
+  <!-- Open Graph (Facebook, WhatsApp, Discord etc) -->
+  <meta property="og:title" content="Redskies">
+  <meta property="og:description" content="West Midlands Alternative Grunge">
+  <meta property="og:image" content="https://redskiesmusic.uk/logo.png">
+  <meta property="og:url" content="https://redskiesmusic.uk">
+  <meta property="og:type" content="website">
 
-<!-- Twitter/X -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Redskies">
-<meta name="twitter:description" content="West Midlands Alternative Grunge">
-<meta name="twitter:image" content="https://redskiesmusic.uk/logo.png">
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Redskies">
+  <meta name="twitter:description" content="West Midlands Alternative Grunge">
+  <meta name="twitter:image" content="https://redskiesmusic.uk/logo.png">
+
   <title>Redskies</title>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L127RKM1N2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-L127RKM1N2');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L127RKM1N2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-L127RKM1N2');
+  </script>
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -48,7 +49,6 @@
 <header>
   <img src="logo.png" alt="Redskies" class="logo">
 
-  
   <!-- NAV MENU -->
   <nav id="nav">
     <a href="index.html">Home</a>
@@ -93,6 +93,17 @@
   </div>
 </section>
 
+<section class="contact fade-in">
+  <h2>Bookings</h2>
+  <p>Want to book Redskies? Get in touch below.</p>
+  <form action="https://formspree.io/f/xwvwodyk" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
 <footer>
   <div class="social-links">
     <a href="https://www.instagram.com/redskiesmusic/" target="_blank" aria-label="Instagram">
@@ -116,16 +127,16 @@
 
 <script>
   // Shrink header on scroll
-window.addEventListener("scroll", function () {
-  const header = document.querySelector("header");
-  if (window.scrollY > 50) {
-    header.classList.add("scrolled");
-    header.style.top = "0";
-  } else {
-    header.classList.remove("scrolled");
-    header.style.top = "37px";
-  }
-});
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector("header");
+    if (window.scrollY > 50) {
+      header.classList.add("scrolled");
+      header.style.top = "0";
+    } else {
+      header.classList.remove("scrolled");
+      header.style.top = "37px";
+    }
+  });
 
   // Fade-in sections as you scroll down
   const fadeEls = document.querySelectorAll(".fade-in");
@@ -140,31 +151,21 @@ window.addEventListener("scroll", function () {
     observer.observe(el);
   });
 
- // Loading screen
-window.addEventListener("load", function () {
-  setTimeout(function () {
-    document.getElementById("loader").classList.add("hide");
-    document.querySelector(".release-banner").classList.add("visible");
-  }, 1800);
-});
+  // Loading screen
+  window.addEventListener("load", function () {
+    setTimeout(function () {
+      document.getElementById("loader").classList.add("hide");
+      document.querySelector(".release-banner").classList.add("visible");
+    }, 1800);
 
-
-// Close menu when clicking links
-document.querySelectorAll("#nav a").forEach(link => {
-  link.addEventListener("click", () => {
-    nav.classList.remove("active");
-    burger.classList.remove("active");
+    // Highlight the current page in the nav
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    document.querySelectorAll("nav a").forEach(function(link) {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
   });
-});
-
-// Highlight the current page in the nav
-const currentPage = window.location.pathname.split("/").pop() || "index.html";
-document.querySelectorAll("nav a").forEach(function(link) {
-  if (link.getAttribute("href") === currentPage) {
-    link.classList.add("active");
-  }
-});
-
 </script>
 
 </body>
