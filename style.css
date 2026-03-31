@@ -31,13 +31,19 @@ header {
 
 /* HOMEPAGE ONLY */
 .home header {
-  background: rgba(0, 0, 0, 0.85);
+  background: transparent;
   position: fixed;
   width: 100%;
-  top: 0;
+  top: 37px;
   left: 0;
-  z-index: 1000;
+  z-index: 1000000;
   box-sizing: border-box;
+  opacity: 1;
+  transition: opacity 0.5s ease, background 0.8s;
+}
+
+.header-hidden {
+  opacity: 0 !important;
 }
 
 header h1 {
@@ -57,9 +63,14 @@ header h1 {
   padding: 10px 20px;
   font-size: 0.85rem;
   letter-spacing: 1px;
-  position: relative;
-  z-index: 1000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000001;
   display: none;
+  transition: top 0.3s ease;
 }
 
 .release-banner.visible {
@@ -185,7 +196,7 @@ header.scrolled {
 
 .video-wrapper {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 ratio */
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
 }
