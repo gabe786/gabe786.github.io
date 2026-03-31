@@ -5,31 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="favicon_transparent.ico">
   <!-- Meta Tags -->
-<meta name="description" content="West Midlands Alternative Grunge">
+  <meta name="description" content="West Midlands Alternative Grunge">
 
-<!-- Open Graph (Facebook, WhatsApp, Discord etc) -->
-<meta property="og:title" content="Redskies">
-<meta property="og:description" content="West Midlands Alternative Grunge">
-<meta property="og:image" content="https://redskiesmusic.uk/logo.png">
-<meta property="og:url" content="https://redskiesmusic.uk">
-<meta property="og:type" content="website">
+  <!-- Open Graph (Facebook, WhatsApp, Discord etc) -->
+  <meta property="og:title" content="Redskies">
+  <meta property="og:description" content="West Midlands Alternative Grunge">
+  <meta property="og:image" content="https://redskiesmusic.uk/logo.png">
+  <meta property="og:url" content="https://redskiesmusic.uk">
+  <meta property="og:type" content="website">
 
-<!-- Twitter/X -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Redskies">
-<meta name="twitter:description" content="West Midlands Alternative Grunge">
-<meta name="twitter:image" content="https://redskiesmusic.uk/logo.png">
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Redskies">
+  <meta name="twitter:description" content="West Midlands Alternative Grunge">
+  <meta name="twitter:image" content="https://redskiesmusic.uk/logo.png">
+
   <title>Redskies - Gigs</title>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L127RKM1N2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-L127RKM1N2');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L127RKM1N2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-L127RKM1N2');
+  </script>
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -42,9 +42,6 @@
 
 <header>
   <img src="logo.png" alt="Redskies" class="logo">
-
-
-  <!-- NAV MENU -->
   <nav id="nav">
     <a href="index.html">Home</a>
     <a href="gigs.html">Gigs</a>
@@ -70,20 +67,10 @@
   <div class="card">
     <p><strong>Marrs Bar — Worcester</strong></p>
     <p>30th July 2026</p>
-    <p class="ticket-soon">Tickets Coming Soon</p>
+    <p class="ticket-soon">Support: Lukash</p>
+    <a href="https://grassrootstickets.com/events/11c0520b-3fdf-4410-a812-c3b55cc03242?slug=redskies-x-lukash-marrs-bar-2026-07-30" target="_blank" class="btn">Buy Tickets</a>
   </div>
 
-</section>
-
-<section class="contact fade-in">
-  <h2>Bookings</h2>
-  <p>Want to book Redskies? Get in touch below.</p>
-  <form action="https://formspree.io/f/xwvwodyk" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-    <button type="submit" class="btn">Send Message</button>
-  </form>
 </section>
 
 <footer>
@@ -118,7 +105,7 @@
     }
   });
 
-  // Loading screen + active nav
+  // Loading screen
   window.addEventListener("load", function () {
     setTimeout(function () {
       document.getElementById("loader").classList.add("hide");
