@@ -311,6 +311,9 @@ header.scrolled {
   align-self: center;
   color: #ff2e63;
   border-color: #ff2e63;
+  background: transparent;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 /* ========================
