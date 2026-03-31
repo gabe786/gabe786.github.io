@@ -309,6 +309,8 @@ header.scrolled {
 
 .contact button {
   align-self: center;
+  color: #ff2e63;
+  border-color: #ff2e63;
 }
 
 /* ========================
