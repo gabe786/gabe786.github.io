@@ -31,10 +31,10 @@ header {
 
 /* HOMEPAGE ONLY */
 .home header {
-  background: transparent;
+  background: rgba(0, 0, 0, 0.85);
   position: fixed;
   width: 100%;
-  top: 37px;
+  top: 0;
   left: 0;
   z-index: 1000;
   box-sizing: border-box;
