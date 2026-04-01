@@ -161,6 +161,13 @@ header.scrolled {
   line-height: 1.8;
 }
 
+.about-welcome {
+  font-size: 1.2rem;
+  color: #eaeaea;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
 /* ========================
    MUSIC / SPOTIFY
 ======================== */
@@ -368,6 +375,16 @@ footer {
 
   .merch-grid .card {
     width: 100%;
+  }
+
+  .release-banner {
+    font-size: 0.75rem;
+    padding: 8px 10px;
+    letter-spacing: 0;
+  }
+
+  .home header {
+    top: 55px;
   }
 }
 
