@@ -706,6 +706,8 @@ nav a.active {
 }
 
 input[type="submit"].btn {
+  display: block !important;
+  margin: 0 auto !important;
   background: #050505 !important;
   color: #ff2e63 !important;
   border: 2px solid #ff2e63 !important;
@@ -718,9 +720,4 @@ input[type="submit"].btn {
   -webkit-appearance: none !important;
   appearance: none !important;
   transition: 0.3s !important;
-}
-
-input[type="submit"].btn:hover {
-  background: #ff2e63 !important;
-  color: #000 !important;
 }
