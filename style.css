@@ -721,3 +721,8 @@ input[type="submit"].btn {
   appearance: none !important;
   transition: 0.3s !important;
 }
+
+input[type="submit"].btn:hover {
+  background: #ff2e63 !important;
+  color: #000 !important;
+}
