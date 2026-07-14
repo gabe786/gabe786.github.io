@@ -8,6 +8,10 @@ body {
   color: #eaeaea;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ========================
    HEADER & NAV
 ======================== */
@@ -320,13 +324,27 @@ header.scrolled {
   resize: vertical;
 }
 
-.contact button {
+.contact button,
+#mc-embedded-subscribe {
   align-self: center;
-  color: #ff2e63;
-  border-color: #ff2e63;
-  background: transparent;
-  -webkit-appearance: none;
-  appearance: none;
+  background: #050505 !important;
+  color: #ff2e63 !important;
+  border: 2px solid #ff2e63 !important;
+  padding: 10px 20px !important;
+  font-family: Arial, sans-serif !important;
+  font-size: 0.9rem !important;
+  font-weight: bold !important;
+  letter-spacing: 2px !important;
+  cursor: pointer !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  transition: 0.3s !important;
+}
+
+.contact button:hover,
+#mc-embedded-subscribe:hover {
+  background: #ff2e63 !important;
+  color: #000 !important;
 }
 
 /* ========================
@@ -634,4 +652,75 @@ nav a.active {
 
 #lightbox-close:hover {
   color: #ff2e63;
+}
+
+/* ========================
+   MAILING LIST
+======================== */
+.mailing-list {
+  padding: 60px 20px;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+.mailing-list h2 {
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+}
+
+.mailing-list p {
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+#mc_embed_signup {
+  width: 100%;
+}
+
+#mc_embed_signup_scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+#mce-EMAIL {
+  background: #111;
+  border: 1px solid #222;
+  border-left: 3px solid #ff2e63;
+  color: #eaeaea;
+  padding: 12px 15px;
+  font-size: 0.9rem;
+  font-family: Arial, sans-serif;
+  letter-spacing: 1px;
+  outline: none;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+#mce-EMAIL:focus {
+  border-color: #ff2e63;
+}
+
+input[type="submit"].btn {
+  background: #050505 !important;
+  color: #ff2e63 !important;
+  border: 2px solid #ff2e63 !important;
+  padding: 10px 20px !important;
+  font-family: Arial, sans-serif !important;
+  font-size: 0.9rem !important;
+  font-weight: bold !important;
+  letter-spacing: 2px !important;
+  cursor: pointer !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  transition: 0.3s !important;
+}
+
+input[type="submit"].btn:hover {
+  background: #ff2e63 !important;
+  color: #000 !important;
 }
